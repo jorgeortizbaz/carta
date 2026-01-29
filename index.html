@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seventh Moon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+</head>
+
+<body class="bg-black">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" onclick="home()">
+                    <img src="images/seventh.png" alt="Seventh Moon" class="flag-icon">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#refrescos">Refrescos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cervezas">Cervezas/Sidras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#copas">Copas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#karaoke">Karaoke</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container text-center text-white mt-5 pt-5">
+        <img src="images/logo.png" alt="Logo" class="img-fluid mb-3 profile-img" />
+        <p class="karaoke-text">Juego de mesa disponible si toda la mesa consume, ¡echa un vistazo a nuestra variedad!</p>
+
+        <div class="sections-container">
+            <div id="refrescos" class="section">
+                <button class="section-header" onclick="toggleSection('refrescos')">
+                    <div class="header-content">
+                        <span class="section-title">Refrescos</span>
+                    </div>
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="section-content" id="refrescos-content">
+                    <div class="content-inner" id="refrescos-inner"></div>
+                </div>
+            </div>
+
+            <div id="cervezas" class="section">
+                <button class="section-header" onclick="toggleSection('cervezas')">
+                    <div class="header-content">
+                        <span class="section-title">Cervezas/Sidras</span>
+                    </div>
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="section-content" id="cervezas-content">
+                    <div class="content-inner" id="cervezas-inner"></div>
+                </div>
+            </div>
+
+            <div id="copas" class="section">
+                <button class="section-header" onclick="toggleSection('copas')">
+                    <div class="header-content">
+                        <span class="section-title">Copas</span>
+                    </div>
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="section-content" id="copas-content">
+                    <div class="content-inner" id="copas-inner"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="karaoke" class="karaoke-section">
+            <img src="images/karaoke.png" alt="Karaoke" class="karaoke-img" />
+            <p class="karaoke-text">¡Disfruta todos los sábados de nuestro karaoke de 23:30 a 2:30!
+                <a href="" class="karaoke-link">Haz clic aquí para poder unirte a la sesión</a>
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-dark navbar-dark text-white py-3 mt-5">
+        <div class="container text-center">
+            <small>&copy; Seventh Moon. Todos los derechos reservados.</small>
+        </div>
+        <div class="container text-center">
+            <small>
+                <span id="currentYear"></span>
+            </small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
