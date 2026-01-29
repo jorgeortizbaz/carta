@@ -23,6 +23,7 @@ const menuData = {
     ],
     cervezas: {
         'De Barril': [
+            { name: 'Kalimotxo', description: '500 ml', price: '3.50€', image: 'images/barrilmahou.jpg' },
             { name: 'Mahou Clásica', description: 'Caña/Pinta', price: '1.80€/3.50€', image: 'images/barrilmahou.jpg' },
             { name: 'Clara Mahou Clásica', description: 'Caña/Pinta', price: '1.80€/3.50€', image: 'images/barrilmahou.jpg' },
             { name: 'Mahou Maestra', description: 'Caña/Pinta', price: '2.20€/4.00€', image: 'images/barrilmaestra.jpg' },
